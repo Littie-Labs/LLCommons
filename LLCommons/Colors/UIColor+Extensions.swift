@@ -18,7 +18,7 @@ extension UIColor {
         let cleanHex = hex.replacingOccurrences(of: "#", with: "")
         
         let scanner = Scanner(string: cleanHex)
-        scanner.scanLocation = 0
+        scanner.currentIndex = scanner.string.startIndex
         
         var rgbValue: UInt64 = 0
         
